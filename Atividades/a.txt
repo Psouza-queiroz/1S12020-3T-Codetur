@@ -1,34 +1,39 @@
 O sistema consiste em duas telas: uma lista de produtos e a página do produto.
-
-O nosso time de produto preparou esse layout para o projeto(https://www.figma.com/file/Dbpn1mqdq2d350NEXojF2v/test-mobile?node-id=392%3A0). 
-
+O nosso time de produto preparou esse layout para o projeto(https://www.figma.com/file/Dbpn1mqdq2d350NEXojF2v/test-mobile?node-id=392%3A0).
+ 
 Consumindo o endpoint https://pacific-wave-51314.herokuapp.com/products?page=<page_num>&size=<page_size>, faça uma tela mostrando a lista de produtos retornada
+RF001 1
+
 
 A lista deve suportar paginação
-RF
+RF001  1
 
 As páginas devem ser carregadas apenas quando forem ser exibidas para o usuário
-RN
+RNF001  1
 
 A imagem exibida deve vir do imageObjects com featured: true
-
-
-
+RF / RN001  0
 
 Extra: para melhorar a performance, é possível descarregar da memória os itens que já passaram e não são mais exibidos na tela?
+RNF002  1
 
 Ao clicar em um produto, o app deve consumir o endpoint https://pacific-wave-51314.herokuapp.com/products/<product_sku> para exibir a tela de produto
+RF003  1
 
 Caso o payload do produto tenha payload inventory.quantity > 0, deve ser exibido o botão de adicionar ao carrinho; caso contrário, deve ser exibido o botão de "AVISE-ME"
+RN002  1
 
 Ao clicar em "COMPRE", deve ser exibida uma modal de confirmação de adição à sacola
+RN / RF003  0
 
 Clicar em "AVISE-ME" abre uma modal para o usuário digitar seu nome e e-mail
+RF004  1
 
 Os botões das modais apenas fecham elas
+RNF / RF005  0
 
 Ao voltar para a lista de produtos, ela deve estar disponível para o usuário sem fazer uma nova requisição à API
-
+RF / RN003  0
 
 
 
